@@ -37,3 +37,23 @@ body{
     transform: scale(0.98);
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
+
+.card p {
+    text-align: center;
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.google {
+    text-align: center;
+}
+
+.google a {
+    border: none;
+}
+
+.google a:hover {
+    transition: 0.3s;
+    background-color:#adb7e6;
+}
+ 

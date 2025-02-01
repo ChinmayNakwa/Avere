@@ -68,9 +68,16 @@ header img:hover {
     display: flex;
     justify-content: center;
     gap: 2rem;
+    padding-left: 18.8px;
     padding-right: 18.8px;
 }
 
+.nav ul:hover {
+    border: 2px solid #666;
+    transition: all 0.55s ease-in-out;
+    box-shadow: 0px 0px 6px 3px  #474242;
+} 
+/* transition ease out not working */
 .nav-item {
     margin: 0;
     padding: 0;
@@ -143,7 +150,7 @@ header img:hover {
     border-top-left-radius: 4px; 
     border-top-right-radius: 4px; 
 }
- 
+
 .container_cards h1{
     font-size: 50px;
     text-transform: uppercase;
@@ -188,7 +195,7 @@ header img:hover {
     max-width: 1200px;
     box-shadow: var(--card-shadow);
 }
-  
+
 .jumbotron h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
@@ -228,7 +235,7 @@ header img:hover {
     width: 80%; 
     box-shadow: 0 12px 20px rgba(0,0,0,0.2);
 }
-  
+
 .newsletter .input-group .btn {
     border-radius: 30px; 
     font-family: 'Times New Roman', Times, serif;
@@ -240,6 +247,12 @@ header img:hover {
     cursor: pointer;
     box-shadow: 0 12px 20px rgba(0,0,0,0.2);
 }
+
+.newsletter .input-group .btn:hover {
+    transform: scale(1.08);
+    transition: .35s;
+    box-shadow: 0px 0px 10px  #8c6e3daa;;
+} 
 
 /*Footer*/
 
@@ -261,9 +274,25 @@ footer a:hover {
     text-decoration: none;
 }
 
-.google {
+.copyright {
+    text-align: left;
+}
+
+.google, .Linkdin {
     text-align: right;
 }
+
+.google a, .Linkdin a {
+    display: inline-block;
+    width: 45px; 
+    height: 45px; 
+    padding: 7px; 
+}
+.google svg, .Linkdin svg {
+    width: 100%;
+    height: 100%;
+}
+
 
 
 /* Animations */
@@ -284,37 +313,91 @@ footer a:hover {
 
 
 /* Responsive Design */
+/* General adjustments for mobile */
 @media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header img {
+        height: 40px;
+        width: 80px;
+    }
+
+    .search-box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .nav ul {
+        flex-direction: row;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .nav-item a {
+        font-size: 16px;
+        padding: 0.5rem;
+    }
+
+    .carousel {
+        padding: 0;
+    }
+
+    .carousel img {
+        height: auto;
+    }
+
     .jumbotron {
-        padding: 2rem 1rem;
+        padding: 1rem;
     }
 
     .jumbotron h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
-    section h1 {
+    .jumbotron p {
+        font-size: 0.9rem;
+    }
+
+    .container_cards h1 {
         font-size: 2rem;
     }
 
     .card {
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .card-img-top {
+        height: 200px;
     }
 
     .newsletter h3 {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
     }
-    
-    .input-group .form-control {
-        width: 100%; 
+
+    .newsletter .input-group .form-control {
+        width: 100%;
+        border-radius: 0px;
+        
     }
-    
-    .input-group .btn {
-        width: 100%; 
-        margin-left: 0; 
+
+    .newsletter .input-group .btn {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+        border-radius: 0px;
+    }
+
+    footer .col {
+        text-align: center;
+    }
+
+    footer .copyright, footer .google, footer .Linkdin {
+        text-align: center;
+        margin-bottom: 1rem;
     }
 }
-
 /* Scroll Bar */
 ::-webkit-scrollbar {
     width: 7px;

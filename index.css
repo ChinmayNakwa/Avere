@@ -147,6 +147,10 @@ header img:hover {
 
 /* Container_Cards */
 
+.container_cards {
+    align-items: center;
+}
+
 .card-title {
     color: var(--primary-color);
     font-family: Helvetica, sans-serif;
@@ -164,6 +168,7 @@ header img:hover {
     border-radius: 5px;
     overflow: hidden;
     transition: all var(--transition-speed);
+    margin-left: 35px;
 }
 
 .card title{
@@ -219,10 +224,9 @@ header img:hover {
     height: 3px;
     background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
 }
-
-
 /* Jumbotron */
 .jumbotron {
+    background: #EDEDED;
     background: linear-gradient(135deg, #5D4F39, #8C6E3D); 
     border-radius: 15px;
     padding: 3rem 2rem;
@@ -352,68 +356,68 @@ footer a:hover {
     body {
         font-size: 14px;
     }
-
+    
     header img {
         height: 40px;
         width: 80px;
     }
-
+    
     .search-box {
         width: 100%;
         padding: 0px;
     }
-
+    
     .nav ul {
         flex-direction: row;
         gap: 0.5rem;
         padding: 0.5rem;
     }
-
+    
     .nav-item a {
         font-size: 16px;
         padding: 0.5rem;
     }
-
+    
     .carousel {
         padding: 0;
     }
-
+    
     .carousel img {
         height: auto;
     }
-
+    
     .jumbotron {
         padding: 1rem;
     }
-
+    
     .jumbotron h1 {
         font-size: 1.75rem;
     }
-
+    
     .jumbotron p {
         font-size: 0.9rem;
     }
-
+    
     .container_cards h1 {
         font-size: 2rem;
     }
-
+    
     .card {
         margin-bottom: 1rem;
     }
-
+    
     .card-img-top {
         height: 200px;
     }
-
+    
     .container_cards .row {
         flex-wrap: nowrap; 
         overflow-x: auto; 
         scrollbar-width: thin; 
         scrollbar-color: var(--secondary-color) var(--dark-bg);
-      }
-
-      .container_cards .col-md-3 {
+    }
+    
+    .container_cards .col-md-3 {
         flex: 0 0 auto;
         width: 250px; 
         margin-right: 55px; 
@@ -423,28 +427,28 @@ footer a:hover {
         background: var(--secondary-color);
         border-radius: 4px;
     }
-
+    
     .newsletter h3 {
         font-size: 1.5rem;
     }
-
+    
     .newsletter .input-group .form-control {
         width: 100%;
         border-radius: 0px;
         
     }
-
+    
     .newsletter .input-group .btn {
         width: 100%;
         margin-left: 0;
         margin-top: 10px;
         border-radius: 0px;
     }
-
+    
     footer .col {
         text-align: center;
     }
-
+    
     footer .copyright, footer .google, footer .Linkdin {
         text-align: center;
         margin-bottom: 1rem;
